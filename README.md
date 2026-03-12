@@ -134,27 +134,27 @@ XGBClassifier(
 ## 📈 **Visualizations**
 
 ### 1. Traffic Heatmap
-![Traffic Heatmap](traffic_heatmap.png)
+![Traffic Heatmap](images/traffic_heatmap.png)
 *Shows which routes are congested at which hours - red = bad, green = good*
 
 ### 2. Traffic Patterns by Time
-![Traffic by Time](traffic_by_time.png)
+![Traffic by Time](images/traffic_by_time.png)
 *Weekday vs weekend comparison and overall traffic distribution*
 
 ### 3. Route Comparison
-![Route Comparison](route_comparison.png)
+![Route Comparison](images/route_comparison.png)
 *Average traffic levels and delays by route*
 
 ### 4. Model Performance
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.png)
 *Detailed breakdown of prediction accuracy*
 
 ### 5. Feature Importance
-![Feature Importance](feature_importance.png)
+![Feature Importance](images/feature_importance.png)
 *Which factors drive traffic predictions*
 
 ### 6. Rush Hour Impact
-![Rush Hour Impact](rush_hour_impact.png)
+![Rush Hour Impact](images/rush_hour_impact.png)
 *How much worse traffic gets during rush hours*
 
 ---
