@@ -12,3 +12,6 @@ python -m gunicorn app:app
 git add requirements.txt
 git commit -m "add gunicorn to requirements"
 git push origin main
+git add app.py
+git commit -m "Add application fallback for gunicorn"
+git push origin main
