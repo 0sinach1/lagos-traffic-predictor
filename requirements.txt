@@ -8,3 +8,6 @@ seaborn==0.13.2
 gunicorn==22.0.0
 '@ | Out-File -FilePath requirements.txt -Encoding utf8
 gunicorn==23.0.0
+git add .
+git commit -m "Add gunicorn dependency"
+git push origin main
