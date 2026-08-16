@@ -151,6 +151,7 @@ with st.expander("📊 Explore Route Data"):
     avg = route_df.groupby('hour')['delay_min'].mean().reset_index()
     avg.columns = ['Hour', 'Avg Delay (mins)']
     st.line_chart(avg.set_index('Hour'))
+application = app
 
 st.caption(
     "Model: GradientBoosting | Dataset: 10 Lagos routes, 2 months | "
