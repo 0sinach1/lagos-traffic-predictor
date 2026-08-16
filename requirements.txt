@@ -9,3 +9,6 @@ gunicorn==22.0.0
 '@ | Out-File -FilePath requirements.txt -Encoding utf8
 gunicorn==23.0.0
 python -m gunicorn app:app
+git add requirements.txt
+git commit -m "add gunicorn to requirements"
+git push origin main
