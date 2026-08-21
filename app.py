@@ -9,16 +9,12 @@ import warnings
 warnings.filterwarnings('ignore')
 
 st.set_page_config(
-    page_title="Lagos Traffic Predictor",
+    page_title="traffic congestion predictor",
     page_icon="🚦",
     layout="centered"
 )
 
-# ── Load and train ────────────────────────────────────────────
-@st.cache_resource
-def load_and_train():
-    url = "https://raw.githubusercontent.com/0sinach1/lagos-traffic-predictor/main/data/lagos_traffic_data_2months.csv"
-    df = pd.read_csv(url)
+# ── Load and train ──────────────────────────────────────────
 
     # Features
     features = ['hour', 'is_weekend', 'is_rush_hour', 'distance_km',
@@ -55,7 +51,7 @@ with st.spinner("Loading model..."):
     model, le_route, le_day, le_target, df, acc = load_and_train()
 
 # ── Header ────────────────────────────────────────────────────
-st.title("🚦 Lagos Traffic Predictor")
+st.title("🚦 Traffic Congestion Predictor")
 st.markdown(
     f"XGBoost-style model trained on **{len(df):,} real Lagos traffic records** across 10 routes. "
     f"Model accuracy: **{acc:.1%}** — built by "
